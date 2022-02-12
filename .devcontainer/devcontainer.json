@@ -1,0 +1,26 @@
+{
+	"name": "TenSecondTools",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "dev-container",
+	"workspaceFolder": "/workspaces/TenSecondTools",
+	"postCreateCommand": "cd $WORKSPACE && poetry install",
+	"settings": {
+		"terminal.integrated.profiles.linux": {
+			"bash": {
+				"path": "bash",
+				"icon": "terminal-bash"
+			},
+			"pwsh": {
+				"path": "pwsh",
+				"icon": "terminal-powershell"
+			}
+		}
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"shd101wyy.markdown-preview-enhanced"
+	]
+}

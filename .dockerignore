@@ -1,0 +1,6 @@
+# Remove everything
+**
+
+# Add back in required artifacts
+!./pyproject.toml
+!./poetry.lock
