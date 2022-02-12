@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "RoboMirror Config",
+    "description": "RoboMirror Configuration Schema",
+    "type": "object",
+    "properties": {
+        "Switches": {
+            "description": "List of [swtich] arguments for regularly used mirroring jobs",
+            "type": "array",
+            "items": {
+                "description": "Switch Jobs",
+                "type": "object",
+                "required": [
+                    "Name",
+                    "Source",
+                    "Destination"
+                ],
+                "properties": {
+                    "Name": {
+                        "description": "Name of Switch, matching the parameter name in the Powershell Script",
+                        "type": "string"
+                    },
+                    "Source": {
+                        "description": "Path to Source File or Folder to be copied from",
+                        "type": "string"
+                    },
+                    "Destination": {
+                        "description": "Path to Source File or Folder to be copied to",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

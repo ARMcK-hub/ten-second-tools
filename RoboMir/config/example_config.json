@@ -1,0 +1,10 @@
+{
+    "$schema": "./schema/config.schema.json",
+    "Switches": [
+        {
+            "Name": "ExampleSwitch",
+            "Source": "C:\\path\\to\\source",
+            "Destination": "C:\\path\\to\\destination"
+        }
+    ]
+}
