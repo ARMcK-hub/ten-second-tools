@@ -6,15 +6,16 @@ for repo in repo_df.index:
     input_dict = {}
     for index, item in enumerate(repo_df.iloc[repo]):
         input_dict[repo_df.columns[index]] = item
-    
-    if input_dict['README Complete'] == 'n':
-    
+
+    if input_dict["README Complete"] == "n":
+
         md_file = f"{input_dict['repo']}_README.md"
         print(md_file)
-        
-        with open(md_file, 'w') as f:
-            f.write(f'''
-<!-- 
+
+        with open(md_file, "w") as f:
+            f.write(
+                f"""
+<!--
 README Template Author: otheneildrew
 Template Source: https://github.com/othneildrew/Best-README-Template
 Version Author: Drew McKinney
@@ -134,4 +135,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-url]: https://github.com/ARMcK-hub/{input_dict['repo']}/issues
 [product-screenshot]: {input_dict['product_screenshot']}
 
-''')
+"""
+            )

@@ -2,13 +2,19 @@
 name = "TenSecondTools"
 version = "0.1.0"
 description = ""
-authors = ["armck"]
+authors = ["ARM"]
+packages = [
+    { include = "src" }
+]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0.0"
 pandas = "^1.4.0"
+black = "^22.1.0"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+mypy = "^0.931"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
