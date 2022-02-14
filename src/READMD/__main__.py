@@ -21,7 +21,7 @@ def build_repo(repo_md: Dict[Any, Any]) -> Repository:
 
 def readmd() -> None:
     config = JsonConfigProvider(
-        "/workspaces/TenSecondTools/src/READMD/config/config.json"
+        "/workspaces/ten-second-tools/src/READMD/config/config.json"
     )
     repo_acc_md = config.get("user")
     repos_md = config.get("repositories")

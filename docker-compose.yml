@@ -5,5 +5,5 @@ services:
       dockerfile: ./.devcontainer/Dockerfile
       context: ./
     volumes:
-      - .:/workspaces/TenSecondTools:cached
+      - .:/workspaces/ten-second-tools:cached
     command: /bin/sh -c "while sleep 1000; do :; done"

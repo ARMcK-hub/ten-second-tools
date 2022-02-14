@@ -14,16 +14,16 @@ Version Author: Drew McKinney
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-![GitHub last commit](https://img.shields.io/github/last-commit/ARMcK-hub/TenSecondTools)
+![GitHub last commit](https://img.shields.io/github/last-commit/ARMcK-hub/ten-second-tools)
 [![MIT License][license-shield]][license-url]
-![GitHub top language](https://img.shields.io/github/languages/top/ARMcK-hub/TenSecondTools)
-![GitHub repo size](https://img.shields.io/github/repo-size/ARMcK-hub/TenSecondTools)
+![GitHub top language](https://img.shields.io/github/languages/top/ARMcK-hub/ten-second-tools)
+![GitHub repo size](https://img.shields.io/github/repo-size/ARMcK-hub/ten-second-tools)
 ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fwestendfinancial.herokuapp.com%2F)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ARMcK-hub/TenSecondTools">
+  <a href="https://github.com/ARMcK-hub/ten-second-tools">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjUT-Segg89qMGNoobVBXN_VMGYK0he4h5OXNqkpWePjLP7WiK&usqp=CAU" alt="Logo" width="100" height="100">
   </a>
 
@@ -32,11 +32,11 @@ Version Author: Drew McKinney
   <p align="center">
     Tools to save a second - or ten.
     <br />
-    <a href="https://github.com/ARMcK-hub/TenSecondTools" target="_blank"><strong> >> Visit Demo >> </strong></a>
+    <a href="https://github.com/ARMcK-hub/ten-second-tools" target="_blank"><strong> >> Visit Demo >> </strong></a>
     <br />
-    <a href="https://github.com/ARMcK-hub/TenSecondTools/issues">Report Bug</a>
+    <a href="https://github.com/ARMcK-hub/ten-second-tools/issues">Report Bug</a>
     -
-    <a href="https://github.com/ARMcK-hub/TenSecondTools/issues">Request Feature</a>
+    <a href="https://github.com/ARMcK-hub/ten-second-tools/issues">Request Feature</a>
   </p>
 </p>
 
@@ -56,7 +56,7 @@ Version Author: Drew McKinney
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/ARMcK-hub/TenSecondTools)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/ARMcK-hub/ten-second-tools)
 
 TenSecondTools is a collaboration of various, small tools to help you on your development journey!
 
@@ -108,14 +108,14 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- Project Dynamic -->
-[license-shield]: https://img.shields.io/github/license/ARMcK-hub/TenSecondTools.svg?style=flat
-[contributors-shield]: https://img.shields.io/github/contributors/ARMcK-hub/TenSecondTools.svg?style=flat
-[contributors-url]: https://github.com/ARMcK-hub/TenSecondTools/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ARMcK-hub/TenSecondTools.svg?style=flat
-[forks-url]: https://github.com/ARMcK-hub/TenSecondTools/network/members
-[stars-shield]: https://img.shields.io/github/stars/ARMcK-hub/TenSecondTools.svg?style=flat
-[stars-url]: https://github.com/ARMcK-hub/TenSecondTools/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ARMcK-hub/TenSecondTools.svg?style=flat
-[issues-url]: https://github.com/ARMcK-hub/TenSecondTools/issues
+[license-shield]: https://img.shields.io/github/license/ARMcK-hub/ten-second-tools.svg?style=flat
+[contributors-shield]: https://img.shields.io/github/contributors/ARMcK-hub/ten-second-tools.svg?style=flat
+[contributors-url]: https://github.com/ARMcK-hub/ten-second-tools/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ARMcK-hub/ten-second-tools.svg?style=flat
+[forks-url]: https://github.com/ARMcK-hub/ten-second-tools/network/members
+[stars-shield]: https://img.shields.io/github/stars/ARMcK-hub/ten-second-tools.svg?style=flat
+[stars-url]: https://github.com/ARMcK-hub/ten-second-tools/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ARMcK-hub/ten-second-tools.svg?style=flat
+[issues-url]: https://github.com/ARMcK-hub/ten-second-tools/issues
 [product-screenshot]: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTjUT-Segg89qMGNoobVBXN_VMGYK0he4h5OXNqkpWePjLP7WiK&usqp=CAU
 

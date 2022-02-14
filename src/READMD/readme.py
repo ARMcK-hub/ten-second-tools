@@ -9,7 +9,7 @@ class ReadMe(ABC):
 
     def write(self, repo: Repository, output: str) -> None:
         write_file = (
-            f"/workspaces/TenSecondTools/src/READMD/output/README_{repo.name}.md"
+            f"/workspaces/ten-second-tools/src/READMD/output/README_{repo.name}.md"
         )
         with open(write_file, "w+") as wf:
             wf.write(output)

@@ -1,10 +1,10 @@
 {
-	"name": "TenSecondTools",
+	"name": "ten-second-tools",
 	"dockerComposeFile": [
 		"../docker-compose.yml"
 	],
 	"service": "dev-container",
-	"workspaceFolder": "/workspaces/TenSecondTools",
+	"workspaceFolder": "/workspaces/ten-second-tools",
 	"postCreateCommand": "cd $WORKSPACE && poetry install",
 	"settings": {
 		"terminal.integrated.profiles.linux": {
