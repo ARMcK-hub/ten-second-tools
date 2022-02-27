@@ -1,2 +1,4 @@
 [flake8]
-ignore = E501, W293, W503
+ignore =
+    E501,  # Line limit
+    W503   # Line break before binary operator

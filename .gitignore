@@ -1,6 +1,15 @@
 #config
 config.json
 
+# universal secrets
+*secret*
+*key*
+*local*
+
+# logs
+*.log
+*.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
