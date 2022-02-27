@@ -12,7 +12,7 @@
             <img alt="License" src="https://img.shields.io/github/license/armck-hub/ten-second-tools.svg" />
         </a>
         <a href="https://github.com/armck-hub/ten-second-tools/actions">
-            <img alt="Tests Passing" src="https://github.com/armck-hub/ten-second-tools/workflows/Test/badge.svg" />
+            <img alt="CI Passing" src="https://github.com/armck-hub/ten-second-tools/workflows/CI/badge.svg" />
         </a>
         <a href="https://codecov.io/gh/armck-hub/ten-second-tools">
             <img src="https://codecov.io/gh/armck-hub/ten-second-tools/branch/master/graph/badge.svg" />
