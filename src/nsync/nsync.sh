@@ -60,12 +60,6 @@ getJob () {
 		echo $job
 }
 
-runRsyncJob () {
-	source=$1
-	destination=$2
-	
-}
-
 # setting source and destination if job
 if [ ! -z "$job" ]
 then
