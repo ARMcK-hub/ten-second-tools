@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "title": "nSync Config",
+    "description": "nSync Configuration Schema",
+    "type": "object",
+    "properties": {
+        "Switches": {
+            "description": "List of [job] arguments for regularly used sync jobs",
+            "type": "array",
+            "items": {
+                "description": "Job names",
+                "type": "object",
+                "required": [
+                    "name",
+                    "source",
+                    "destination"
+                ],
+                "properties": {
+                    "name": {
+                        "description": "Name of job",
+                        "type": "string"
+                    },
+                    "source": {
+                        "description": "Path to Source File or Folder to be copied from",
+                        "type": "string"
+                    },
+                    "destination": {
+                        "description": "Path to Source File or Folder to be copied to",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
