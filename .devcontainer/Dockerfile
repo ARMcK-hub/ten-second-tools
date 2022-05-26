@@ -1,9 +1,9 @@
-FROM armck/python-base:latest
+FROM armck/python-base:1.1
 
 # ----- Environment Setup -----
 
 # Set Workspace directory
-ARG WORKSPACE=/workspaces/template-python
+ARG WORKSPACE=/workspaces/ten-second-tools
 ENV WORKSPACE=${WORKSPACE}
 
 # Avoid warnings by switching to noninteractive
