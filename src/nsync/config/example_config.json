@@ -1,0 +1,10 @@
+{
+    "$schema": "./schema/config.schema.json",
+    "jobs": [
+        {
+            "name": "myjob",
+            "source": "/home/user/path/to/source",
+            "destination": "/home/user/path/to/destination"
+        }
+    ]
+}
