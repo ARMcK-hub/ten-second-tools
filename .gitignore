@@ -1,3 +1,5 @@
+*.csv
+
 #config
 config.json
 

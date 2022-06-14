@@ -2,10 +2,17 @@
 name = "ten-second-tools"
 version = "0.1.0"
 description = ""
-authors = ["armck-hub"]
+authors = ["armckinney"]
+packages = [
+    { include = "Psyncronous", from = "src" },
+    { include = "Rando", from = "src" },
+    { include = "tax", from = "src"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+python-dateutil = "^2.8.2"
+networkx = "^2.7.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0.1"
