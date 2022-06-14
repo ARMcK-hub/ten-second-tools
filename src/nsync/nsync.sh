@@ -21,7 +21,7 @@ helpFunction()
    echo ""
    echo "Parameters:"
    echo -e "\t -s	Source path."
-   echo -e "\t -d	Destination path; Example: "
+   echo -e "\t -d	Destination path."
    echo -e "\t -j	Space delimited list of job names, defined in config.json; Example: 'job1 job2'"
    echo -e "\t -c	Path of config file. Default: ./config/config.json; Example: '/absolute/path/config.json'"
    echo -e "${nocolor}"
@@ -55,9 +55,15 @@ jobs=$(echo $config | jq .jobs)
 
 # returns job as JSON from config
 getJob () {
-		jobName=$1
-		job=$(echo $jobs | jq --arg jobName "$jobName" '.[] | select(.name | contains($jobName))')
-		echo $job
+	jobName=$1
+	job=$(echo $jobs | jq --arg jobName "$jobName" '.[] | select(.name | contains($jobName))')
+	echo $job
+}
+
+# creates parent directories and file in one execution
+mktouch () {
+	sudo mkdir -p "$(dirname "$1")"
+	sudo touch "$1"
 }
 
 # setting source and destination if job
@@ -72,13 +78,19 @@ echo -e "\n\t${blue}Running Request: $job \tSource: $source \tDestination:$desti
 
 # performing deletes on overwriteTypes missed by rsync
 echo -e "\n\tFinding Overwritable Files ($overwriteTypes) ...."
-owFiles=$(find "${destination}/$(basename $source)" -type f -name $overwriteTypes)
+owFiles=$(sudo find "${destination}/$(basename $source)" -type f -name $overwriteTypes)
 echo -e "\tDeleted: \n$owFiles"
 rm -f $owFiles
 
 # performing rsync job
 echo -e "\n\tRunning Sync...."
 logFile="$destination/logs/nsync_$(basename $source).log"
+
+if [ ! -f "$logFile" ]
+then
+	mktouch $logFile
+fi
+
 sudo rsync $source $destination -mach --super --force --progress --stats --log-file $logFile
 
 echo -e "\n\tLog written to: $logFile"
