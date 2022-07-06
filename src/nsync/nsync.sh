@@ -80,7 +80,7 @@ echo -e "\n\t${blue}Running Request: $job \tSource: $source \tDestination:$desti
 echo -e "\n\tFinding Overwritable Files ($overwriteTypes) ...."
 owFiles=$(sudo find "${destination}/$(basename $source)" -type f -name $overwriteTypes)
 echo -e "\tDeleted: \n$owFiles"
-rm -f $owFiles
+sudo rm -f $owFiles
 
 # performing rsync job
 echo -e "\n\tRunning Sync...."
