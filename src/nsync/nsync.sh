@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # defaults
-configFile="./config/config.json"
+configFile=$(dirname -- "$0")/config/config.json
 overwriteTypes="*.hc"
 
 # constants
