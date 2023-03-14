@@ -18,30 +18,36 @@ helpFunction()
    echo -e "\t$0 -s /path/to/source -d /path/to/destination -c /path/to/config.json"
    echo -e "\t$0 -j myjob"
    echo -e "\t$0 -j 'myjob myotherjob' -c ./myconfig.json"
+   echo -e "\t$0 -lj -c ./myconfig.json"
    echo ""
    echo "Parameters:"
    echo -e "\t -s	Source path."
    echo -e "\t -d	Destination path."
    echo -e "\t -j	Space delimited list of job names, defined in config.json; Example: 'job1 job2'"
    echo -e "\t -c	Path of config file. Default: ./config/config.json; Example: '/absolute/path/config.json'"
+   echo -e "\t -lj	List configured jobs."
    echo -e "${nocolor}"
    exit 1
 }
 
 # acquiring opts, prints helpFunction in case parameter is non-existent
-while getopts "s:d:j:c:" opt
+while getopts "s:d:j:c:l:" opt
 do
    case "$opt" in
       s ) source="$OPTARG" ;;
       d ) destination="$OPTARG" ;;
       j ) job="$OPTARG" ;;
       c ) configFile="$OPTARG" ;;
+      l ) listJobs="$OPTARG" ;;
       ? ) helpFunction ;;
    esac
 done
 
 # Print helpFunction in case parameters are empty
-if (([ -z "$source" ] || [ -z "$destination" ]) && [ -z "$job" ]) || (([ ! -z "$source" ] || [ ! -z "$destination" ]) && [ ! -z "$job" ])
+if ([ "$listJobs" ])
+then
+   echo -e "\t${blue}Listing Configured Jobs:${nocolor}"
+elif (([ -z "$source" ] || [ -z "$destination" ]) && [ -z "$job" ]) || (([ ! -z "$source" ] || [ ! -z "$destination" ]) && [ ! -z "$job" ])
 then
    echo -e "\t${red}Some or all of the parameters are empty or configured incorrectly${nocolor}";
    helpFunction
@@ -65,6 +71,12 @@ mktouch () {
 	sudo mkdir -p "$(dirname "$1")"
 	sudo touch "$1"
 }
+
+if [ "$listJobs" ]
+then
+   cat $configFile
+   exit 0
+fi
 
 # setting source and destination if job
 if [ ! -z "$job" ]
