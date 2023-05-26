@@ -1,8 +1,14 @@
 from cryptax.coinbase_pro import CoinbaseProTransactionFactory
 from cryptax.core import ReportGenerator
 
-txs_file = "/workspaces/ten-second-tools/src/tax/data/account_CoinbasePro_2021.csv"
-# txs_file = "/workspaces/ten-second-tools/src/tax/data/test_transactions.csv"
+"""
+This is intended to be the proper implementation of cryptax, but is a work in progress.
+"""
+
+# txs_file = "/workspaces/ten-second-tools/src/cryptax/data/account_CoinbasePro_2021.csv"
+txs_file = (
+    "/workspaces/ten-second-tools/src/cryptax/data/test/test_account_transactions.csv"
+)
 
 STRATEGY = "lowest"
 

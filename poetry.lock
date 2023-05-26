@@ -185,6 +185,14 @@ extra = ["lxml (>=4.6)", "pygraphviz (>=1.9)", "pydot (>=1.4.2)"]
 test = ["pytest (>=7.0)", "pytest-cov (>=3.0)", "codecov (>=2.1)"]
 
 [[package]]
+category = "main"
+description = "Fundamental package for array computing in Python"
+name = "numpy"
+optional = false
+python-versions = ">=3.8"
+version = "1.24.3"
+
+[[package]]
 category = "dev"
 description = "Core utilities for Python packages"
 name = "packaging"
@@ -363,7 +371,7 @@ socks = ["pysocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
 [metadata]
-content-hash = "e02e9dae9a7b9e2b2a3421d40799294584aeefbe8d235e82897f7a1c24b77a06"
+content-hash = "b4d553df34599d9d682766e3aa25f8f1745c77e697e6e67f9c0af091866d8944"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -383,6 +391,7 @@ mccabe = []
 mypy = []
 mypy-extensions = []
 networkx = []
+numpy = []
 packaging = []
 pathspec = []
 pep8-naming = []

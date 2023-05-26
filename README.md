@@ -42,6 +42,18 @@
 <!-- Description -->
 Ten Second Tools contains various tools that can assist in acomplish various and mundane tasks!
 
+### Cryptax
+> Crypto transaction tax resolver
+
+### GecKoin
+> Cypto Coin price data scraping from CoinGecko
+
+### nSync
+> Standardized filesystem syncing with rsync
+
+### POptArts
+> PowerShell Option Arguments - brough to shell scripting
+
 ### Psyncronous
 > Standardized Asyncronous Pool Execution in Python
 

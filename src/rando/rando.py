@@ -8,6 +8,7 @@ Creation Date: 2020-02-08
 import random
 import numpy as np
 
+
 #  returns a random string of letters and numbers of given length
 def randstr(string_length=5, bias=1, all_nums=False):
     # string_length is length of returned string
@@ -31,7 +32,7 @@ def randstr(string_length=5, bias=1, all_nums=False):
 
     # constructing string from random choice of a letter or number, based on bias input
     for chars in string_range:
-        if all_nums == True:
+        if all_nums:
             char_choice = random.choice(number_choice)
         else:
             char_choice = char_biased[random.randint(0, len(char_biased) - 1)]
