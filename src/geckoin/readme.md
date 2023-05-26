@@ -1,20 +1,16 @@
 # GecKoin
-TODO
-
-nSync offers the following features:
-- mirror archiving of files using rsync, ACLs not included
-- file change logging with execution stats
-- force overwrite of special file types like .hc
-- regular job storage in form of config file
-
-
-Also see `RoboMirror` for a similar PowerShell implementation.
->**Note**: nSync works from file checksums while RoboMirror uses Windows PowerShell's Robocopy - which works by filename.
+Geckoin is a simple API call implementation that allows for collecting current coin price data in a preferred format. 
 
 </br>
 
 # Usage
-0. TODO
+0. Ensure that the coin IDs that are desired are properly filled in the script using a preferred text editor. (micro shown here)
 ```
-apt-get install -y jq
+micro ./get_crypto_prices.py
 ```
+
+1. Execute the script using a python3 installation.
+```
+python3 ./get_crypto_prices.py
+```
+
