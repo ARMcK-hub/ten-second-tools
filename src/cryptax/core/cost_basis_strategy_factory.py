@@ -1,6 +1,6 @@
 from typing import Dict
 
-from tax.core.cost_basis import CostBasisStrategy
+from cryptax.core.cost_basis import CostBasisStrategy
 
 
 class CostBasisStrategyFactory:

@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Type
 
 import pytest
-from tax.core.transactions import (
+from cryptax.core.transactions import (
     Distribution,
     PostOrderTransactionGraph,
     Transaction,

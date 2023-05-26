@@ -3,8 +3,8 @@ from datetime import datetime
 from typing import Dict, List, Optional, Tuple
 
 from dateutil.relativedelta import relativedelta
-from tax.core.transactions import Transaction
-from tax.core.transactions.transaction_graph import PostOrderTransactionGraph
+from cryptax.core.transactions import Transaction
+from cryptax.core.transactions.transaction_graph import PostOrderTransactionGraph
 
 
 class CostBasisStrategy(ABC):

@@ -3,7 +3,7 @@ import os
 from typing import Any, Dict, List, Optional, Tuple, Type
 from uuid import uuid4
 
-from tax.core.cost_basis import CostBasisStrategy
+from cryptax.core.cost_basis import CostBasisStrategy
 
 from .transactions.transaction import Acquisition, Distribution, Transaction
 

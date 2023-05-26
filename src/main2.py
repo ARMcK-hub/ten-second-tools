@@ -3,7 +3,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime
 from typing import List
 
-from tax.fills import Fill
+from cryptax.fills import Fill
 
 txs_file = "/workspaces/ten-second-tools/src/tax/data/fills_CoinbasePro_2021.csv"
 

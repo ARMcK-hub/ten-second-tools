@@ -5,7 +5,7 @@ from collections.abc import Iterable
 from typing import Callable, Dict, List, Union
 
 from networkx import DiGraph, dfs_postorder_nodes
-from tax.core.transactions import Transaction
+from cryptax.core.transactions import Transaction
 
 
 class TransactionGraph(DiGraph, ABC):

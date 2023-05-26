@@ -6,7 +6,7 @@ authors = ["armckinney"]
 packages = [
     { include = "psyncronous", from = "src" },
     { include = "rando", from = "src" },
-    { include = "tax", from = "src"}
+    { include = "cryptax", from = "src"}
 ]
 
 [tool.poetry.dependencies]

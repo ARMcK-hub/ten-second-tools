@@ -1,6 +1,6 @@
 from abc import ABC
 
-from tax.core.transactions import Transaction
+from cryptax.core.transactions import Transaction
 
 
 class TransactionFactory(ABC):

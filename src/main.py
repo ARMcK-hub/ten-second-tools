@@ -1,5 +1,5 @@
-from tax.coinbase_pro import CoinbaseProTransactionFactory
-from tax.core import ReportGenerator
+from cryptax.coinbase_pro import CoinbaseProTransactionFactory
+from cryptax.core import ReportGenerator
 
 txs_file = "/workspaces/ten-second-tools/src/tax/data/account_CoinbasePro_2021.csv"
 # txs_file = "/workspaces/ten-second-tools/src/tax/data/test_transactions.csv"
