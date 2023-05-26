@@ -62,7 +62,7 @@ jobs=$(echo $config | jq .jobs)
 # returns job as JSON from config
 getJob () {
 	jobName=$1
-	job=$(echo $jobs | jq --arg jobName "$jobName" '.[] | select(.name | contains($jobName))')
+	job=$(echo $jobs | jq --arg jobName "$jobName" '.[] | select(.name == $jobName)')
 	echo $job
 }
 
@@ -87,6 +87,17 @@ then
 fi
 
 echo -e "\n\t${blue}Running Request: $job \tSource: $source \tDestination:$destination${nocolor}"
+
+# confimation to execute
+echo "Would you like to execute this request? (y/n):"
+read confirm
+
+if [[ $confirm != "y" ]]
+then
+	echo "Request Aborted."
+	exit
+fi
+
 
 # performing deletes on overwriteTypes missed by rsync
 echo -e "\n\tFinding Overwritable Files ($overwriteTypes) ...."
