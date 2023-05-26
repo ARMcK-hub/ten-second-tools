@@ -20,14 +20,16 @@ ids = [
     "sushi",
     "bancor",
     "uniswap",
-    "ethereum-name-service"
+    "ethereum-name-service",
 ]
 
-r = requests.get(f"https://api.coingecko.com/api/v3/simple/price?ids={'%2C'.join(ids)}&vs_currencies=usd")
+r = requests.get(
+    f"https://api.coingecko.com/api/v3/simple/price?ids={'%2C'.join(ids)}&vs_currencies=usd"
+)
 data = r.json()
 
 with open("crypto_price_data.csv", "w+") as file:
     writer = csv.writer(file)
     writer.writerow(["currency", "price_usd"])
     for id in ids:
-        writer.writerow([id, data[id]['usd']])
+        writer.writerow([id, data[id]["usd"]])
