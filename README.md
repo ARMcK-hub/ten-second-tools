@@ -8,22 +8,22 @@
     </p>
     <p>
     <!-- Shields -->
-        <a href="https://github.com/armck-hub/ten-second-tools/LICENSE.txt">
-            <img alt="License" src="https://img.shields.io/github/license/armck-hub/ten-second-tools.svg" />
+        <a href="https://github.com/armckinney/ten-second-tools/LICENSE.txt">
+            <img alt="License" src="https://img.shields.io/github/license/armckinney/ten-second-tools.svg" />
         </a>
-        <a href="https://github.com/armck-hub/ten-second-tools/actions">
-            <img alt="CI Passing" src="https://github.com/armck-hub/ten-second-tools/workflows/CI/badge.svg" />
+        <a href="https://github.com/armckinney/ten-second-tools/actions">
+            <img alt="CI Passing" src="https://github.com/armckinney/ten-second-tools/workflows/CI/badge.svg" />
         </a>
-        <a href="https://codecov.io/gh/armck-hub/ten-second-tools">
-            <img src="https://codecov.io/gh/armck-hub/ten-second-tools/branch/master/graph/badge.svg" />
+        <a href="https://codecov.io/gh/armckinney/ten-second-tools">
+            <img src="https://codecov.io/gh/armckinney/ten-second-tools/branch/master/graph/badge.svg" />
         </a>
-        <a href="https://github.com/armck-hub/ten-second-tools/issues">
-            <img alt="Issues" src="https://img.shields.io/github/issues/armck-hub/ten-second-tools" />
+        <a href="https://github.com/armckinney/ten-second-tools/issues">
+            <img alt="Issues" src="https://img.shields.io/github/issues/armckinney/ten-second-tools" />
         </a>
-        <a href="https://github.com/armck-hub/ten-second-tools/pulls">
-            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armck-hub/ten-second-tools" />
+        <a href="https://github.com/armckinney/ten-second-tools/pulls">
+            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/armckinney/ten-second-tools" />
         </a>
-        <a href="https://stackshare.io/armck-hub/ten-second-tools">
+        <a href="https://stackshare.io/armck/ten-second-tools">
             <img alt="StackShare.io" src="http://img.shields.io/badge/tech-stack-0690fa.svg?label=StackShare.io">
         </a>
     </p>
@@ -31,9 +31,9 @@
     <!-- Links -->
         <a href="#demo">View Demo</a>
         ·
-        <a href="https://github.com/armck-hub/ten-second-tools/issues/new/choose">Report Bug</a>
+        <a href="https://github.com/armckinney/ten-second-tools/issues/new/choose">Report Bug</a>
         ·
-        <a href="https://github.com/armck-hub/ten-second-tools/issues/new/choose">Request Feature</a>
+        <a href="https://github.com/armckinney/ten-second-tools/issues/new/choose">Request Feature</a>
     </p>
 </div>
 <br>
