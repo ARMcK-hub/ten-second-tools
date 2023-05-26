@@ -4,8 +4,8 @@ version = "0.1.0"
 description = ""
 authors = ["armckinney"]
 packages = [
-    { include = "Psyncronous", from = "src" },
-    { include = "Rando", from = "src" },
+    { include = "psyncronous", from = "src" },
+    { include = "rando", from = "src" },
     { include = "tax", from = "src"}
 ]
 
