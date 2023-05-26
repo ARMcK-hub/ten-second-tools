@@ -1,4 +1,6 @@
+# all csvs just in case, add back in test data
 *.csv
+!/**/test/*
 
 #config
 config.json
